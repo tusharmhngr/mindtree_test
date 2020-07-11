@@ -15,3 +15,5 @@ Q1 : made a rest api controller individual need to run using postman
 Deploy database file present in path : project root directory 
 
 database file name : network_devices.sql
+
+Note : you can test rest api methods using postman
