@@ -1,0 +1,17 @@
+Description for test :
+All the excecise are done in one project . kindly let me know at time of reviewing my code i will give you dry run
+
+Excercise 1:
+Q1 : made a cron url => http://localhost:81/basictest/web/ManageRouter/manage-router/index
+Q2 : made a cron 
+Q3 : made a console controller 
+sample command  : php yii router/create
+
+Q4 : url => http://localhost:81/basictest/web/ManageRouter/manage-router/draw-shape
+
+Excercise 3:
+Q1 : made a rest api controller individual need to run using postman
+
+Deploy database file present in path : project root directory 
+
+database file name : network_devices.sql
