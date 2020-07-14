@@ -82,6 +82,9 @@ class CommonApiController extends Controller
 
    
     //excercise : 3.1.d
+    //url : http://localhost:81/basictest/web/Api/common-api/get-router-by-sapid
+    //send token in header and send {"sapid":"wewgwegewgwegewgwgwrgewwegrwgw"} in param 
+    // method : POST
     public function actionGetRouterBySapid(){
         $sapid=Yii::$app->request->post('sapid');
         if(isset($sapid) && !empty($sapid)){
