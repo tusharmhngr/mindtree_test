@@ -143,6 +143,7 @@ class CommonApiController extends Controller
             $routerModel->hostname=$hostname;
             $routerModel->ip_address=$ip_address;
             $routerModel->mac_address=$mac_address;
+            $routerModel->created_from='API';
             if($routerModel->save()){
                 $response['status']='success';
                 $response['msg']='recrord inserted succesfully';
