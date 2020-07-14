@@ -26,7 +26,7 @@ class CommonApiController extends Controller
         'verbs' => [
               'class' => VerbFilter::className(),
               'actions' => [
-                  'getallinventorydata'  => ['POST'],
+                  'GetRouterBySapid'  => ['POST'],
                   'Create'  => ['POST'],
               ],
           ],
@@ -85,7 +85,7 @@ class CommonApiController extends Controller
     public function actionGetRouterBySapid(){
         $sapid=Yii::$app->request->post('sapid');
         if(isset($sapid) && !empty($sapid)){
-            $routerdata=Router::find()->where(['sapid'=>$sapid,'is_active'=>1])->asArray()-all();
+            $routerdata=Router::find()->where(['sapid'=>$sapid,'is_active'=>1])->asArray()->all();
                 if(isset($routerdata) && !empty($routerdata)){
                     $response['status']='success';
                     $response['data']=$routerdata;

@@ -47,7 +47,7 @@ class ApiToken extends \yii\db\ActiveRecord
         ];
     }
 
-    public static function validateToken($module, $token) {
+    public static function validateToken($token) {
         return self::find()->where( ['token' => $token] )->exists();
     }
 	
